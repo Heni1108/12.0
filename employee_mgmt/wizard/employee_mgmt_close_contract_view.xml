@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="close_contract_view" model="ir.ui.view">
+		<field name="name">close.contract.view</field>
+        <field name="model">close.contract</field>
+        <field name="arch" type="xml">
+        	<form string="Close Contract" >
+    			<group>
+        			<field name="contract_ids" widget="many2many_tags" />
+                </group>
+        		<footer>
+        			<button string="Confirm" name="close_contracts" type="object" class="oe_highlight"/>
+        			<button string="Cancel" name="cancel" type="object" special="cancel"/>
+        		</footer>
+        	</form>
+        </field>
+	</record>
+	
+	<record id="close_contract_action" model="ir.actions.act_window">
+		<field name="name">Close Contract</field>
+        <field name="res_model">close.contract</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="close_contract_view"/>
+    </record>
+
+
+    <menuitem id="menu_close_contract" name="Close Contract" action="close_contract_action" parent="menu_wizards" sequence="100"/>
+</odoo>

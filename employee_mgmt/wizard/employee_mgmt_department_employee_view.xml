@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="department_wise_employee_view" model="ir.ui.view">
+		<field name="name">employee.mgmt.department.employee.view</field>
+        <field name="model">department.employee</field>
+        <field name="arch" type="xml">
+        	<form string="Filter Employees" >
+    			<group>
+        			<group>
+        				<field name="department_ids" widget="many2many_tags" string="Department:"/>
+        			</group>
+        		</group>
+        		<footer>
+        			<button string="Open" name="open_employee_tree" type="object" class="oe_highlight"/>
+        			<button string="Cancel" name="cancel" type="object" special="cancel"/>
+        		</footer>
+        	</form>
+        </field>
+	</record>
+	
+	<record id="department_wise_employee_action" model="ir.actions.act_window">
+		<field name="name">Department wise Employee</field>
+        <field name="res_model">department.employee</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="department_wise_employee_view"/>
+    </record>
+
+	<menuitem id="menu_department_wise_employee" name="Department Wise Employee" action="department_wise_employee_action" parent="menu_wizards" sequence="100"/>
+</odoo>

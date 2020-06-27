@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="job_position_application_developer" model="emp.job">
+            <field name="name">Application Engineer</field>
+            <field name="code">04</field>
+        </record>
+
+        <record id="job_position_database_admin" model="emp.job">
+            <field name="name">Database Administrator</field>
+            <field name="code">05</field>
+        </record>
+
+        <record id="job_position_network_engineer" model="emp.job">
+            <field name="name">Network Engineer</field>
+            <field name="code">06</field>
+        </record>
+
+        <record id="job_position_security_specialist" model="emp.job">
+            <field name="name">Security Specialist</field>
+            <field name="code">07</field>
+        </record>
+
+        <record id="job_position_system_architect" model="emp.job">
+            <field name="name">System Architect</field>
+            <field name="code">08</field>
+        </record>
+
+        <record id="job_position_software_quality_assurance" model="emp.job">
+            <field name="name">Software Quality Assurance Analyst</field>
+            <field name="code">09</field>
+        </record>
+
+        <record id="job_position_customer_support_admin" model="emp.job">
+            <field name="name">Customer Support Administrator</field>
+            <field name="code">10</field>
+        </record>
+    </data>
+</odoo>

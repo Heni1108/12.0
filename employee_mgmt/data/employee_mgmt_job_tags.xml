@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="job_tag_java_developer" model="emp.job.tags">
+            <field name="name">JAVA</field>
+        </record>
+
+        <record id="job_tag_dot_net" model="emp.job.tags">
+            <field name="name">.NET</field>
+        </record>
+
+         <record id="job_tag_python_developer" model="emp.job.tags">
+            <field name="name">Python</field>
+        </record>
+
+        <record id="job_tag_graphics_designer" model="emp.job.tags">
+            <field name="name">Graphics Designer</field>
+        </record>
+
+         <record id="job_tag_web_designer" model="emp.job.tags">
+            <field name="name">Web Designer</field>
+        </record>
+
+        <record id="job_tags_blackbox_tester" model="emp.job.tags">
+            <field name="name">Black box Tester</field>
+        </record>
+
+         <record id="job_tag_whitebox_tester" model="emp.job.tags">
+            <field name="name">White box Tester</field>
+        </record>
+
+         <record id="job_tag_dba" model="emp.job.tags">
+            <field name="name">DBA</field>
+        </record>
+
+    </data>
+</odoo>

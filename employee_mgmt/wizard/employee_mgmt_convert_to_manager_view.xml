@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="convert_to_manager_view" model="ir.ui.view">
+		<field name="name">contract.employee.view</field>
+        <field name="model">convert.to.manager</field>
+        <field name="arch" type="xml">
+        	<form string="Change Position" >
+                <group>
+                    <group>
+                       <div>
+                            <h3>
+                                <p>Would You like to change Position?    </p>     
+                            </h3>
+                       </div>
+                   </group>
+                   <group>
+                        <field name="is_manager" nolabel="1"/>
+                   </group>
+                 </group>
+        		<footer>
+        			<button string="Confirm" name="change_position" type="object" class="oe_highlight"/>
+        			<button string="Cancel" name="cancel" type="object" special="cancel"/>
+        		</footer>
+        	</form>
+        </field>
+	</record>
+
+    <act_window name="Change Position"
+        res_model="convert.to.manager"
+        src_model="emp.employee"
+        target="new"
+        view_type="form"
+        view_id="convert_to_manager_view"
+        id="convert_manager"
+        />
+	
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="emp_contract_demo_data_1" model="emp.employee.contract">
+            <field name="name">Soham's contract</field>
+            <field name="start_date">06/19/2000</field>
+            <field name="end_date">06/19/2001</field>
+            <field name="employee_id">1</field>
+            <field name="basic_salary">18500</field>
+            <field name="job_id">2</field>
+            <field name="salary_structure_id">5</field>
+        </record>
+    </data>
+</odoo>
