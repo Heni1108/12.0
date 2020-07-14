@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<menuitem name="Asset" id="fleet.menu_root" sequence="115" groups="fleet.fleet_group_user" web_icon="fleet,static/description/icon.png"/>
+</odoo>
